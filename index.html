@@ -3,68 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
 </head>
 <body>
-    <header class="header">  
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-    </header>
-    <div id="window" class="hide">
-        
+    <div class="container">
+        <div class="images">
+            <i class="fa-solid fa-circle-chevron-left"></i>
+            <img src="./images/Rectangle 30.png" class="active">
+            <img src="./images/solar-panels-meadow 1.png">
+            <img src="./images/solar-panels-meadow 2 (1).png">
+            <img src="./images/solar-panels-meadow 2 (2).png">
+            <i class="fa-solid fa-circle-chevron-right"></i>
+        </div>
+        <div class="dots">
+            <div class="act"></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </div>
 
-    <section>
-        <div  class="card">
-            <div class="title">
-                <h1>Pyramids</h1>
-            </div>
-            <div class="body">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor deleniti ut nostrum voluptas soluta repellat, perferendis iure neque! Dolorum quisquam consequatur dolorem, eveniet officiis molestiae itaque quae repellat aperiam numquam!</p>
-            <img src="imges/pexels-davidmceachan-91409.jpg" alt="">
-            </div>
-            <button onclick="showPic('imges/pexels-davidmceachan-91409.jpg')">view full screen</button>
-        </div>
-
-        <div class="card">
-            <div class="title">
-                <h1>Nile</h1>
-            </div>
-            <div class="body">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor deleniti ut nostrum voluptas soluta repellat, perferendis iure neque! Dolorum quisquam consequatur dolorem, eveniet officiis molestiae itaque quae repellat aperiam numquam!</p>
-            <img src="imges/pexels-ozgomz-1755390.jpg" alt="">
-            </div>
-            <button onclick="showPic('imges/pexels-ozgomz-1755390.jpg')">view full screen</button>
-        </div>
-
-        <div class="card">
-            <div class="title">
-                <h1>Ancient</h1>
-            </div>
-            <div class="body">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor deleniti ut nostrum voluptas soluta repellat, perferendis iure neque! Dolorum quisquam consequatur dolorem, eveniet officiis molestiae itaque quae repellat aperiam numquam!</p>
-            <img src="imges/pexels-pixabay-33571.jpg" alt="">
-            </div>
-            <button onclick="showPic('imges/pexels-pixabay-33571.jpg')">view full screen</button>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <p>&copy; Web Master. All rights reserved.</p>
-    </footer>  
-    <script>
-          let ShowDiv = document.querySelector('#window')
-            let closeBtn = document.querySelector('#close')
-        function showPic(pic){
-                    ShowDiv.className = "show"
-            ShowDiv.innerHTML = `
-             <i onclick=" ShowDiv.className = 'hide'" id="close" class="fa-solid fa-x"></i><img src="${pic}" alt="">` }
-    </script>  
+    <script src="main.js"></script>
 </body>
 </html>
